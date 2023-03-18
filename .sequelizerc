@@ -1,0 +1,8 @@
+const path = require('path');
+
+module.exports = {
+  config: path.resolve(__dirname, 'src', 'config', 'databse.ts'),
+  'models-path': path.resolve(__dirname, 'sequelize', 'models'),
+  'migrations-path': path.resolve(__dirname, 'sequelize', 'migrations'),
+  'seeders-path': path.resolve(__dirname, 'sequelize', 'seeders')
+}
