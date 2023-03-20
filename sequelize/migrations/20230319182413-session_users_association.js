@@ -3,7 +3,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     queryInterface.addConstraint('Sessions', {
-      fields: ['UserId'],
+      fields: ['userId'],
       type: 'foreign key',
       name: 'session_user_association',
       references: {
